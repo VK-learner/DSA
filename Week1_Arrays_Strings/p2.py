@@ -16,3 +16,4 @@ else:
     print("You are a child.")
 
 # best/worst case: O(1) (worst case performs 5 constant comparisons)
+# avg case = (best case + worst case)/2
