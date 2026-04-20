@@ -79,6 +79,7 @@ print(factors)
 print(sorted(factors))# remember that the TC of sorting is O(NlogN)
 
 #3.2 Better Approach
+# if interviewer asks write code without using math then
 # Time Complexity = 𝑂(√𝑛)
 # Space Complexity = O(k) ---> k would be the total number of factors
 # result = []
