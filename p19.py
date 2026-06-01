@@ -16,8 +16,8 @@
 # else:
 #     print('Palindrome')
 
-# using function
-
+# using while loop and function
+# TC = O(N/2) => O(N) & SC = O(2) => O(1) since we used only 2 variables
 def is_palindrome(string):
     L = 0
     R = len(string) - 1
@@ -28,6 +28,20 @@ def is_palindrome(string):
         R -= 1
     return True
 result = is_palindrome('MOM')
+if result:
+    print('Palindrome')
+else:
+    print('Not Palindrome')
+
+# using recursion
+def is_palindrome(string, L, R):
+    if L >= R:
+        return True
+    if string[L] != string[R]:
+        return False
+    return is_palindrome(string, L + 1, R - 1)
+
+result = is_palindrome('MOM', 0, len('MOM') - 1)
 if result:
     print('Palindrome')
 else:
