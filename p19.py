@@ -34,6 +34,9 @@ else:
     print('Not Palindrome')
 
 # using recursion
+# TC = O(N/2) => O(N)
+# SC = O(N/2) => O(N)
+# since we are using recursion and the maximum depth of the recursion will be N/2
 def is_palindrome(string, L, R):
     if L >= R:
         return True
